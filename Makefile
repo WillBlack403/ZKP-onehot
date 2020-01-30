@@ -1,6 +1,7 @@
 CXX=g++
 CXXFLAGS=-Isrc/includes -O3 -march=native -pthread -lntl -lgmpxx -lgmp -lrelic 
 
+
 ALL: test_security_param test_vec_length
 	
 test_security_param: BlackH19.o HenryOG11.o GrothK15.o pedersen.o utils.o ./src/test_security_param.cc
